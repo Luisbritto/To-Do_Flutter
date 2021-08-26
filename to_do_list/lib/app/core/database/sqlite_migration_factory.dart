@@ -1,7 +1,7 @@
 
+import 'package:to_do_list/app/core/database/migrations/migration.dart';
 import 'package:to_do_list/app/core/database/migrations/migration_v1.dart';
 
-import 'migrations/migration.dart';
 
 class SqliteMigrationFactory {
   
