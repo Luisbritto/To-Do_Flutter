@@ -51,7 +51,7 @@ class LoginPage extends StatelessWidget {
                           children: [
                             TextButton(
                               onPressed: () {},
-                              child: Text('Esqueceu sua senha, jumento?'),
+                              child: Text('Esqueceu sua senha?'),
                             ),
                             ElevatedButton(
                               onPressed: () {},
