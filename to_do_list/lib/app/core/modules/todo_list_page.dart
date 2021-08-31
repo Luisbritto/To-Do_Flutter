@@ -9,10 +9,10 @@ class TodoListPage extends StatelessWidget {
   TodoListPage(
       {Key? key,
       List<SingleChildWidget>? bindings,
-      required WidgetBuilder page})
-      : _bindings = bindings,
-      _page = page,
-      super(key: key);
+      required WidgetBuilder page
+      }) :  _bindings = bindings,
+            _page = page,
+            super(key: key);
 
   @override
   Widget build(BuildContext context) {
