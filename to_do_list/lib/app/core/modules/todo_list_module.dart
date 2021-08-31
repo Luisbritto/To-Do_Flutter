@@ -13,7 +13,14 @@ abstract class TodoListModule{
   }) : _routers = routers, _bindings = bindings;
 
   Map<String, WidgetBuilder> get routers {
-    return _routers.map((key, pageBuilder) => MapEntry(key, (_) => TodoListPage(bindings: _bindings,
-    page: pageBuilder,)));
+    return _routers.map(
+      (key, pageBuilder) => MapEntry(
+        key, 
+        (_) => TodoListPage(
+          bindings: _bindings,
+          page: pageBuilder,
+        ),
+      ),
+     );
   }
 }
