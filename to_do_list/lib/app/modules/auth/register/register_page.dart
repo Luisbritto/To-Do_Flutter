@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:to_do_list/app/core/ui/messages.dart';
 import 'package:to_do_list/app/core/ui/theme_extensions.dart';
 import 'package:to_do_list/app/core/validators/validators.dart';
 import 'package:to_do_list/app/core/widget/todo_list_field.dart';
@@ -39,12 +40,7 @@ class _RegisterPageState extends State<RegisterPage> {
       if (success) {
         Navigator.of(context).pop();
       } else if (error != null && error.isNotEmpty) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(error),
-            backgroundColor: Colors.red
-          ),
-        );
+        context.read<Messages>().showError(error);
       }
     });
   }
